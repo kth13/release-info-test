@@ -43,6 +43,27 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>com.github.saiprasadkrishnamurthy</groupId>
+				<artifactId>springboot-manifest-maven-plugin</artifactId>
+				<version>2.6</version>
+				<executions>
+					<execution>
+						<id>generate-git-manifests</id>
+
+						<goals>
+							<goal>generate-git-manifests</goal>
+						</goals>
+						<configuration>
+							<!-- eg: JIRA ID patterns of your project -->
+							<ticketPatterns>RLI-[0-9]+</ticketPatterns>
+							<skip>false</skip> <!-- Optional default false-->
+							<outputDir>target/classes</outputDir> <!-- Optional, defaults to target/manifests/git -->
+							<maxNoOfMavenVersionsForDiffsDump>2</maxNoOfMavenVersionsForDiffsDump>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
