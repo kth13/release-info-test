@@ -23,6 +23,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.releaseinfo</groupId>
+			<artifactId>Jar1</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.releaseinfo</groupId>
+			<artifactId>Jar2</artifactId>
+			<version>1.1</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
